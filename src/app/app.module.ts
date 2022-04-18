@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchAppDirective } from './search-app.directive';
+import { GithubuserComponent } from './users/githubuser/githubuser.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SearchAppDirective } from './search-app.directive';
     AppComponent,
     NavbarComponent,
     SearchAppDirective,
+    GithubuserComponent,
   ],
   imports: [
     BrowserModule,
