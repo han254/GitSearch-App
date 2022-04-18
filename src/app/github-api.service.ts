@@ -8,11 +8,16 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class GithubApiService {
-  getUserInfo() {
-    throw new Error('Method not implemented.');
-  }
+  private username:any;
+
 
   constructor(private http: HttpClient) { 
-    
+    console.log(this.username)
+    this.username="han254"
+
+  
+  }
+  getUserInfo(){
+    return this.http.get("https://api.github.com/users/" + this.username)
   }
 }
