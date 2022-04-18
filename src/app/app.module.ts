@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchAppDirective } from './search-app.directive';
 import { GithubUserComponent } from './github-user/github-user.component';
+import { GithubReposComponent } from './repos/github-repos/github-repos.component';
 
 
 
@@ -18,6 +19,7 @@ import { GithubUserComponent } from './github-user/github-user.component';
     NavbarComponent,
     SearchAppDirective,
     GithubUserComponent,
+    GithubReposComponent,
 
   ],
   imports: [
