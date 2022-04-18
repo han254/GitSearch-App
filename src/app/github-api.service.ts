@@ -7,6 +7,11 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class GithubApiService {
+  getUserInfo() {
+    throw new Error('Method not implemented.');
+  }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+    
+  }
 }
