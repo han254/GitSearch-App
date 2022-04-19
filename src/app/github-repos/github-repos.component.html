@@ -1,1 +1,17 @@
-<p>github-repos works!</p>
+<div class="main-container">
+    <h6>Popular resipitories</h6>
+    <div class="col-md-12 repo">
+        <div class="row">
+            <div class=" card width='200'" *ngFor="let repos of repos">
+                <a href="{{repos.html_url}}">
+                    <h5>{{repos.name}}</h5>
+                    <p>{{repos.description}}</p>
+                </a>
+                <div class="repo">
+                    <p>{{repos.language}}</p>
+                    <p>Forks {{repos.forks_count}} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
