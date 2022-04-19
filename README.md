@@ -30,7 +30,7 @@ An Angular application that allows a user to enter a GitHub username into a form
 * Github [https://github.com/han254]
 
 ### Link to my github-pages
-()
+(https://han254.github.io/GithubSearch-App/)
 ### License
 
 Copyright (c) 2022 [click here to view license](LICENSE)
