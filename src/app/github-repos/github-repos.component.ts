@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { GithubApiService } from '../github-api.service';
 
 @Component({
   selector: 'app-github-repos',
@@ -9,13 +8,13 @@ import { GithubApiService } from '../github-api.service';
 export class GithubReposComponent implements OnInit {
   public repos: any =[];
 
-  constructor(private GithubApiService: GithubApiService) {  
+  constructor() {  
 
-    this.GithubApiService.getRepo().subscribe((response: any) => {
-    this.repos = response;
-    console.log(response);
+  //   this.githubApiService.getRepo().subscribe((response: any) => {
+  //   this.repos = response;
+  //   console.log(response);
     
-  })
+  // })
 }
 
   ngOnInit(): void {

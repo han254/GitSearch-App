@@ -13,23 +13,22 @@ export class GithubUserComponent implements OnInit {
 
   constructor(private githubApiService:GithubApiService ) { 
     this.githubApiService.getUserInfo().subscribe((response: any) => {
-      this.user = response;
-      console.log(response);
+    this.user = response;
+    console.log(response);
       
-    })
+    });
   }
-  searchUser() {
+  search() {
     this.githubApiService.getUsername(this.username)
     this.githubApiService.getUserInfo().subscribe((response: any) => {
         this.user = response;
         console.log(response);
-    })
-    this.githubApiService.getRepo().subscribe((response: any) => {
+    });
+       this.githubApiService.getRepo().subscribe((response: any) => {
         this.repos = response;
-      })
+      });
     }
 
   ngOnInit(): void {
   }
-
 }
