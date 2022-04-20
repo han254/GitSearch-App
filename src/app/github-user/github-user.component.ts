@@ -8,14 +8,16 @@ import { GithubApiService } from '../github-api.service';
 })
 export class GithubUserComponent implements OnInit {
   public user: any =[];
-  public username:any =[];
+  public username:any;
   public repos:any =[];
 
   constructor(private githubApiService:GithubApiService ) { 
     this.githubApiService.getUserInfo().subscribe((response: any) => {
     this.user = response;
     console.log(response);
-      
+    });
+    this.githubApiService.getRepo().subscribe((response: any) => {
+      this.repos = response;
     });
   }
   search() {

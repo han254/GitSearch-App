@@ -1,40 +1,41 @@
 <form class="form-inline">
-    <div class="form-group ">
-        <input size="50" type="search" class="form-control" placeholder="Github Username" [(ngModel)]="username" name="username" (keyup)="search">
-    </div>
-    </form>
+  <div class="form-group ">
+    <input size="50" type="search" class="form-control" placeholder="Github Username" [(ngModel)]="username"
+      name="username" (keyup)="search">
+  </div>
+</form>
 
 
 <div class="col-md-4">
-    <div class="row">
-        <div class="container-fluid">
-            <img src="{{user.avatar_url}}" alt="" height="200" class="rounded-circle">
-            <div class="user">
-                <h3>{{user.name}}</h3>
-                <h6>{{user.login}}</h6>
-                <p class="card-text">{{user.bio}}</p>
-                <a [href]="user.html_url" target="_blank" class="btn btn-secondary ">Edit profile</a><br>
-                <a [href]="user.html_url" target="_blank">{{user.twitter_username}}</a>
-                <h6>{{user.location}}</h6>
-            </div>
-        </div>
-</div>
+  <div class="row">
+    <div class="container-fluid">
+      <img src="{{user.avatar_url}}" alt="" height="200" class="rounded-circle">
+      <div class="user">
+        <h3>{{user.name}}</h3>
+        <h6>{{user.login}}</h6>
+        <p class="card-text">{{user.bio}}</p>
+        <a [href]="user.html_url" target="_blank" class="btn btn-secondary ">Edit profile</a><br>
+        <a [href]="user.html_url" target="_blank">{{user.twitter_username}}</a>
+        <h6>{{user.location}}</h6>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="main-container">
-    <h6>Popular resipitories</h6>
-    <div class="col-md-12 repo">
-        <div class="row">
-            <div class=" card width='200'" *ngFor="let repos of repos">
-                <a href="{{repos.html_url}}">
-                    <h5>{{repos.name}}</h5>
-                    <p>{{repos.description}}</p>
-                </a>
-                <div class="repo">
-                    <p>{{repos.language}}</p>
-                    <p>Forks {{repos.forks_count}} </p>
-                </div>
-            </div>
+  <h6>Popular resipitories</h6>
+  <div class="col-md-12 repo">
+    <div class="row">
+      <div class=" card width='200'" *ngFor="let repos of repos">
+        <a href="{{repos.html_url}}">
+          <h5>{{repos.name}}</h5>
+          <p>{{repos.description}}</p>
+        </a>
+        <div class="repo">
+          <p>{{repos.language}}</p>
+          <p>Forks {{repos.forks_count}} </p>
         </div>
+      </div>
     </div>
+  </div>
 </div>
