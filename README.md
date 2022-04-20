@@ -21,7 +21,6 @@ An Angular application that allows a user to enter a GitHub username into a form
 * HTML
 * CSS3
 * Bootstrap
-* Markdown
 
 
 ## Support and contact details
